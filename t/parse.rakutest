@@ -2,7 +2,7 @@ use Test;
 
 use Unicode::UTF8-Parser;
 
-plan 7;
+plan 6;
 
 sub utf8parse($list) {
     parse-utf8-bytes($list.Supply).list;

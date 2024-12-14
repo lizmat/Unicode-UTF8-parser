@@ -1,4 +1,6 @@
 Revision history for Unicode::UTF8-Parser
 
 {{$NEXT}}
+
+0.2  2024-12-14T14:14:08+01:00
     - Initial version
