@@ -1,11 +1,14 @@
 use Test;
+
 use Unicode::UTF8-Parser;
+
+plan 7;
 
 sub utf8parse($list) {
     parse-utf8-bytes($list.Supply).list;
 }
 
-sub test-parse($s) {
+sub test-parse($s) is test-assertion {
     my $s2 = $s;
     $s2 ~~ s:g/<:!L+:!N+:!S+:!P>/./;
     my @parse = utf8parse($s.encode('utf8').list);
@@ -24,4 +27,4 @@ test-parse("സന്തോഷകരമായ ക്രിസ്മസ്");
 
 is utf8parse(["æ".encode('utf8').list.Slip, 150, 'a'.ord]), ['æ', 150, 'a'], "æ<150>a parsed correcly";
 
-done-testing;
+# vim: expandtab shiftwidth=4

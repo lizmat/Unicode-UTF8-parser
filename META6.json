@@ -1,16 +1,25 @@
 {
-    "name"          : "Unicode::UTF8-Parser",
-    "version"       : "*",
-    "perl"          : "v6.0.0",
-    "author"        : "github:krunen",
-    "authors"       : [ "Karl Rune Nilsen" ],
-    "description"   : "Supply which converts a supply of UTF8 bytes to unicode characters",
-    "depends"       : [ ],
-    "provides"      : { "Unicode::UTF8-Parser" : "lib/Unicode/UTF8-Parser.pm6"},
-    "repo-type"     : "git",
-    "license"       : "Artistic-2.0",
-    "source-url"    : "git://github.com/krunen/unicode-utf8-parser.git",
-    "support"       : {
-        "irc" : "irc://irc.freenode.org/#perl6"
-    }
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "Karl Rune Nilsen"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Convert a Supply of bytes to a Supply of unicode characters",
+  "license": "Artistic-2.0",
+  "name": "Unicode::UTF8-Parser",
+  "perl": "v6.0.0",
+  "provides": {
+    "Unicode::UTF8-Parser": "lib/Unicode/UTF8-Parser.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/lizmat/Unicode-UTF8-parser.git",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "*"
 }
